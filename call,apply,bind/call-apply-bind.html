@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>call-apply-bind</title>
+</head>
+<body>
+  <!-- call apply bind 都是函数对象方法 -->
+  <script>
+    Function.prototype.call = function(obj,...rest){
+      this(...rest)
+      // 给obj添加一个临时的方法
+
+      // 通过obj调用临时的方法
+
+    }
+  </script>
+  <script>
+    function fn(a,b) {
+      console.log(a,b,this)
+    }
+    const obj = {m:1}
+    fn.call(obj,1,2)
+  </script>
+</body>
+</html>

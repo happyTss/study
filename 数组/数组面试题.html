@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    //传递两个参数m，n，返回长度为m，所有元素都为n的数组
+    // 1.循环
+/*     let m =3 
+    let n =5
+    var array = []
+    function fn(m,n){
+      for (let m = 0; m < array.length; m++) {
+        array.push(n)
+        
+      }
+    }
+    fn()
+    console.log(array) */
+  /*   let m = 3
+    let n = 4
+    function fn(m, n) {
+      return m ? fn(m - 1, n).concat(n) : [];
+    }
+
+    console.log(fn()) */
+
+/*     const arr = [1,2,3]
+    function repeatString(str,n) {
+      return new Array(n+1).join(str)
+    }
+    // console.log(repeatString(arr,2))
+    console.log(123)
+    console.log("123")
+    console.log(arr.join("-"))
+    console.log(arr.join("1"))
+    console.log(arr.join("-1-")) */
+    const arr = [1,2,3]
+    function repeatString(str,n){
+    return new Array(n+1).join(str)
+  }
+  console.log(repeatString("question",2))
+  </script>
+</body>
+</html>
