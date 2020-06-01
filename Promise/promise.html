@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>promise</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // 1.创建一个新的promise对象
+    const promise1 = new Promise((resolve,reject) => {
+      //执行异步任务
+      setTimeout(() => {
+        const time = Date.now()
+        if (time % 2 == 0) {//success =>res
+          // resolve('成功的数据,time = '+ time )
+          resolve(`成功的数据${time}`)
+        } else {//defeat =>req
+          // reject('失败的数据,time='+ time)
+          reject(`失败的数据${time}`)
+        }
+        
+      }, 1000);
+    })
+    promise1.then(
+      value => {
+      //成功接收到value的数据
+      // console.log("成功的回调",value)
+      console.log(`成功的回调   ${value}`)
+      },
+      reason =>{
+        //失败接受的数据
+        // console.log('失败的回调',reason)
+      console.log(`失败的回调  ${reason}`)
+
+      }
+    )
+    //
+
+  </script>
+</body>
+</html>
