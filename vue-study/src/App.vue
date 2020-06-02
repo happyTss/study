@@ -2,7 +2,12 @@
   <div id="app">
     <h1>App组件</h1>
     <p>{{num}}</p>
+    <p>{{ a = 1}}</p>
+    <p>{{1}}</p>
     <hr>
+  <input type="tel" name="" id="">
+  <input type="number" name="" id="">
+
     <Home :getHomeData = "getHomeData" />
   </div>
 </template>
