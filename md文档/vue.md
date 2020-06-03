@@ -243,7 +243,24 @@
 
    
 
-8. 
+8. vuex
+      组件 => dispach => Actions => commit => Mutation => mutate => State => Render
+   1. State
+   * vuex中的数据源，我们需要保存的数据就保存在这里，可以在页面通过 this.$store.state来获取我们定义的数据；
+
+   2. Getters：
+   * Getter相当于vue中的computed计算属性，getter 的返回值会根据它的依赖被缓存起来，且只有当它的依赖值发生了改变才会被重新计算，这里我们可以通过定义vuex的Getter来获取，Getters 可以用于监听、state中的值的变化，返回计算后的结果，
+
+   3. Mutations：
+   *mutations是操作state数据的方法的集合，比如对该数据的修改、增加、删除等等。
+
+   4. Actions 异步操作
+
+
+
+   5. Modules 模块化状态管理
+   * 当项目庞大，状态非常多时，可以采用模块化管理模式。Vuex 允许我们将 store 分割成模块（module）。每个模块拥有自己的 state、mutation、action、getter、甚至是嵌套子模块——从上至下进行同样方式的分割。
+
 
 9. 
 

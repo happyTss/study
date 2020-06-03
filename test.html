@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+      const arr14 = [1,2,3,4,5]
+  console.log(arr14.splice(2,2,'new'))//[3,4]
+  console.log(arr14)//[1,2,"new",5]
+
+  const arr18 = ['a','b','c']
+  arr18.forEach(function (i,key) {
+    console.log(i,key)//a 0  b 1  c 2
+    console.log(key,i)//0 "a" 1 "b" 2 "c"
+  })
+  </script>
+</body>
+</html>
