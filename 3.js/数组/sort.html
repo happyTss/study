@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sort</title>
+</head>
+
+<body>
+  <input type="text">
+  <input type="text">
+  <input type="text">
+  <input type="text">
+  <script type="text/javascript">
+    var arr = [
+      { name: 'LL', age: 5 },
+      { name: 'XX', age: 24 },
+      { name: 'YY', age: 16 },
+      { name: 'ZZ', age: 10 },
+      { name: 'AA', age: 26 }
+    ];
+    
+    function compare(value) {
+      return function (a, b) {
+        console.log(a,b)
+      console.log(a[value],b[value])
+        var aaa = a[value];
+        var bbb = b[value];
+        return aaa - bbb;
+      }
+    }
+    compare(arr)
+    console.log(arr.sort(compare('age')))
+  </script>
+</body>
+
+</html>

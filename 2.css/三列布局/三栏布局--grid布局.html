@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid布局</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .layout-table .container{
+      min-height: 200px;
+      display: grid;
+      grid-template-columns: 300px auto 300px;
+      grid-template-rows: 150px;
+    }
+    .layout-table .container .left{
+      background: pink;
+    }
+    .layout-table .container .center{
+      background: blue;
+    }
+    .layout-table .container .right{
+      background: green;
+    }
+  </style>
+</head>
+<section class="layout-table">
+  <h1>三列布局</h1>
+  <article class="container">
+    <div class="left"></div>
+    <div class="center">
+      <h2>flexbox解决方案</h2>
+      <p>1.三列布局flex布局解决方案</p>
+      <p>1.三列布局flex布局解决方案</p>
+      <p>1.三列布局flex布局解决方案</p>
+      <p>1.三列布局flex布局解决方案</p>
+      <p>1.三列布局flex布局解决方案</p>
+      <p>1.三列布局flex布局解决方案</p>
+      <p>1.三列布局flex布局解决方案</p>
+      <p>1.三列布局flex布局解决方案</p>
+    </div>
+    <div class="right"></div>
+
+  </article>
+</section>
+
+<body>
+
+</body>
+
+</html>

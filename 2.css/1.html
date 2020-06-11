@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .classA{color:red}
+    .classB{color:blue}
+  </style>
+</head>
+<body>
+  <p class="classA classB">color</p>
+  <script type="text/javascript">
+    // var obj = {
+    //   func:function(){
+    //     console.log(func)
+    //   }
+    // }
+    // obj.func()
+    // var func = function () {
+    //   console.log(func)
+    // }
+    // func()
+
+    // function func(x,y) {
+    //   console.log(y);
+    //   return{
+    //     func:function(m) {
+    //       return func(m,x)
+    //     }
+    //   }
+    // }
+    // var a = func(0);
+    // a.func(1);
+    // a.func(2);
+    // a.func(3);
+
+    // var b = func(0).func(2).func(3)
+
+    // var c= func(0).func(1);
+    // c.func(2);
+    // c.func(3)
+
+    function foo() {
+      return function () {
+        console.log(this)
+      }
+    }
+    var obj = {
+      foo:function(){
+        console.log(this);
+        return function(){
+          console.log(this)
+        }
+      }
+    }
+    function Cons() {
+      console.log(this)
+    }
+    obj.foo()();
+    foo()();
+    var foo1 = obj.foo();
+    foo1();
+    var cons = new Cons()
+    Cons()
+  </script>
+</body>
+</html>
