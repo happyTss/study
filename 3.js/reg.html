@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reg</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    // let str = 'im?***driving*??*to*?beijing*?**after*breakfast'
+    // let str2 = str.replace(/[^\w']+(\w)/g, (m, p) => m.slice(-2, -1) === '?' ? ` ${p.toUpperCase()}` : ` ${p}`)
+    // console.log(str2)
+
+
+    // var reg = /\d/g
+    // reg.exec(123)
+
+    // var f = {
+    //   reg: /\d/g,
+    //   valueOf() { return this.reg.exec(123)[0] }
+    // }
+    // if (f == 1 && f == 2 && f == 3) {
+    //   console.log('1', "------------");
+    // }
+
+    var b = 10;
+    var c = function b() {
+      var b = 20;
+      console.log(b);//20
+      // console.log(window.b);//10
+    };
+    c()
+    console.log(b)
+
+
+
+  </script>
+
+</body>
+
+</html>

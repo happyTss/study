@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .color1 {
+      color: #fff;
+    }
+
+    .color2 {
+      color: blue;
+    }
+
+    .color3 {
+      color: red;
+    }
+
+    .color4 {
+      color: green;
+    }
+
+    .color5 {
+      color: yellow;
+    }
+
+    .wrap {
+      width: 100%;
+      height: 100%;
+      background: #00527b;
+      display: flex;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .classA {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      color: #fff;
+      border-bottom: 1px solid #000;
+      box-sizing: border-box;
+    }
+
+    .classB {
+      height: 80px;
+      line-height: 80px;
+    }
+
+    .coloms2 {
+      width: 220px;
+      height: 80px;
+      color: #0085a8;
+      border-left: 1px solid #000;
+      box-sizing: border-box;
+    }
+
+    .coloms2 .header {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #000;
+      box-sizing: border-box;
+      /* background: darkorange; */
+    }
+
+    .coloms2 .header .title {
+      width: 55px;
+    }
+
+    .coloms2 .content1 {
+      height: 50px;
+      /* background: pink; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      border-bottom: 1px solid #000;
+      border-left: 1px solid #000;
+    }
+
+    .coloms2 .content1:last-child {
+      border-bottom: 0px;
+    }
+
+    .coloms2 .content1 .text {
+      width: 55px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="coloms1">
+      <div class="classA classB">类别</div>
+      <div class="classA">本期</div>
+      <div class="classA">同期</div>
+      <div class="classA">对比</div>
+    </div>
+    <div class="coloms2">
+      <div class="header">
+        刑事案件总计
+      </div>
+      <div class="header">
+        <div class="title">受理</div>
+        <div class="title">新收</div>
+        <div class="title">审计</div>
+        <div class="title">结案率</div>
+        <div class="title">未结</div>
+      </div>
+      <div class="content1">
+        <div class="text color1">1</div>
+        <div class="text color2">2</div>
+        <div class="text color3">3</div>
+        <div class="text color4">4</div>
+        <div class="text color5">5</div>
+      </div>
+      <div class="content1">
+        <div class="text color1">1</div>
+        <div class="text color2">2</div>
+        <div class="text color3">3</div>
+        <div class="text color4">4</div>
+        <div class="text color5">5</div>
+      </div>
+      <div class="content1">
+        <div class="text color1">1</div>
+        <div class="text color2">2</div>
+        <div class="text color3">3</div>
+        <div class="text color4">4</div>
+        <div class="text color5">5</div>
+      </div>
+
+    </div>
+
+    <div class="coloms2">
+      <div class="header">
+        刑事案件总计
+      </div>
+      <div class="header">
+        <div class="title">1</div>
+        <div class="title">2</div>
+        <div class="title">3</div>
+        <div class="title">4</div>
+        <div class="title">5</div>
+      </div>
+    </div>
+
+    <div class="coloms2">
+      <div class="header">
+        刑事案件总计
+      </div>
+      <div class="header">
+        <div class="title">1</div>
+        <div class="title">2</div>
+        <div class="title">3</div>
+        <div class="title">4</div>
+        <div class="title">5</div>
+      </div>
+    </div>
+    <div class="coloms2">
+      <div class="header">
+        刑事案件总计
+      </div>
+      <div class="header">
+        <div class="title">1</div>
+        <div class="title">2</div>
+        <div class="title">3</div>
+        <div class="title">4</div>
+        <div class="title">5</div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
