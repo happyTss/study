@@ -4,9 +4,37 @@
 
 2. ### vue 修饰符
 
-3. ### vue 插槽
+3. ### vue指令
 
-4. ### vue 生命周期
+   1. 自定义指令的时候在注册方法的时候必须是小写,否则注册的指令会失效.标签体内寻找到的指令都是会自动转换成小写
+
+      ```js
+        //注册全局指令
+          /* 
+            el:指令属性所在的标签对象
+            binding:包含指令相关信息数据对象,value存的就是表达式的值
+          */
+          Vue.directive('upper-text', (el, binding) => {
+            el.innerText = binding.value.toUpperCase()
+          })
+                //注册局部指令 只能在当前vm实例里面有效
+            directives: {
+              'lower-text': (el, binding) => {
+                el.innerText = binding.value.toLowerCase()
+              },
+              'lowertext': (el, binding) => {
+                console.log(binding)
+                el.innerText = binding.value.toLowerCase()
+      
+              }
+            }
+      ```
+
+      
+
+4. ### vue 插槽
+
+5. ### vue 生命周期
 
    在 created 阶段已经进行了数据的劫持代理
    用户发请求一般都是在 mounted 里面进行,如何必须要用户看到实时信息的话需要放在 beforeMount 里面.一般情况下,在 beforeMount 里面发请求的时候,如果数据量大,有很多运算之内的操作等,会造成页面卡顿,加载费时等,用户体验性不好.
@@ -87,7 +115,7 @@
 
    ```js
    vm.$nextTick：
-
+   
    updated: function () {
       this.$nextTick(function () {
       // Code that will run only after the
@@ -139,7 +167,7 @@
 
        ***
 
-5. ### vue 指令
+6. ### vue 指令
 
    1. v-text
 
@@ -171,7 +199,7 @@
 
    15. <u>**当和 v-if 一起使用时，v-for 的优先级比 v-if 更高。**</u>
 
-6. 路由守卫
+7. 路由守卫
 
    ```js
    router.beforeEach((to,from,next) = >{
@@ -182,7 +210,7 @@
    })
    ```
 
-7. vue 组件通信
+8. vue 组件通信
 
    1. 父子间通信
       1. 父传子
